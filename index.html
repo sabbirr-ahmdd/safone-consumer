@@ -6,506 +6,216 @@
 <title>Super Moon Detergent Powder — by SafoneConsumer, Bangladesh</title>
 <meta name="description" content="Super Moon detergent powder, manufactured by SafoneConsumer (Safone Consumer Products Bangladesh). BSTI-certified. Become a distributor or retailer today.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --nil-indigo: #1a3b6e;
-    --nil-indigo-deep: #0f2749;
-    --deep-ink: #14202e;
-    --sudsy-white: #faf8f3;
-    --marigold: #f3a93d;
-    --marigold-deep: #d98f22;
-    --foam-mint: #dceee7;
-    --foam-mint-deep: #bfdcd1;
-    --line: rgba(20,32,46,0.12);
-    --display: 'Anton', sans-serif;
-    --body: 'DM Sans', sans-serif;
+    --navy: #10233f;
+    --navy-deep: #081833;
+    --ink: #16233a;
+    --paper: #ffffff;
+    --paper-alt: #f4f6f9;
+    --gold: #c99a3d;
+    --gold-deep: #9c7527;
+    --gold-soft: #fbf1de;
+    --line: rgba(16,35,63,0.10);
+    --shadow: 0 10px 30px -12px rgba(16,35,63,0.14);
+    --shadow-lg: 0 20px 50px -18px rgba(16,35,63,0.22);
+    --r-lg: 28px;
+    --r-md: 20px;
+    --r-sm: 14px;
+    --display: 'Sora', sans-serif;
+    --body: 'Manrope', sans-serif;
     --mono: 'IBM Plex Mono', monospace;
   }
 
   *{ margin:0; padding:0; box-sizing:border-box; }
-
   html{ scroll-behavior:smooth; }
 
   body{
     font-family: var(--body);
-    color: var(--deep-ink);
-    background: var(--sudsy-white);
-    line-height: 1.5;
-    overflow-x: hidden;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.65;
+    font-weight: 500;
+    font-size: 16.5px;
   }
 
   img,svg{ display:block; max-width:100%; }
-
   a{ color:inherit; text-decoration:none; }
 
-  .wrap{
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 clamp(20px, 5vw, 48px);
-  }
+  .wrap{ max-width: 1120px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 44px); }
 
   .eyebrow{
     font-family: var(--mono);
     font-size: 0.72rem;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    font-weight: 600;
-    color: var(--nil-indigo);
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .eyebrow::before{
-    content: "";
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    background: var(--marigold);
+    font-weight: 500;
+    color: var(--gold-deep);
+    background: var(--gold-soft);
     display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
   }
 
   h1,h2,h3{
     font-family: var(--display);
-    text-transform: uppercase;
-    letter-spacing: 0.01em;
-    line-height: 1.02;
-    font-weight: 400;
+    font-weight: 700;
+    line-height: 1.14;
+    color: var(--navy);
+    letter-spacing: -0.015em;
   }
 
-  :focus-visible{
-    outline: 3px solid var(--marigold);
-    outline-offset: 3px;
-  }
+  :focus-visible{ outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 6px; }
 
   @media (prefers-reduced-motion: reduce){
-    *{ animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+    *{ transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   }
 
   /* ---------- NAV ---------- */
   header{
     position: sticky; top: 0; z-index: 50;
-    background: rgba(250,248,243,0.9);
+    background: rgba(255,255,255,0.88);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
   }
-  nav.wrap{
-    display:flex; align-items:center; justify-content:space-between;
-    height: 76px;
-  }
-  .logo{
-    display:flex; align-items:center; gap:10px;
-    font-family: var(--display);
-    font-size: 1.15rem;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: var(--nil-indigo-deep);
-  }
-  .logo .drop{
-    width: 22px; height: 26px;
-    background: linear-gradient(160deg, var(--nil-indigo), var(--nil-indigo-deep));
-    border-radius: 50% 50% 50% 4%;
-    transform: rotate(-8deg);
-    flex-shrink: 0;
-  }
+  nav.wrap{ display:flex; align-items:center; justify-content:space-between; height: 78px; }
+  .logo{ display:flex; align-items:center; gap:9px; font-family: var(--display); font-size: 1.18rem; font-weight: 800; color: var(--navy); }
+  .logo .dot{ width: 11px; height: 11px; border-radius: 50%; background: var(--gold); }
+  .nav-right{ display:flex; align-items:center; gap: 28px; }
+  .nav-link{ font-family: var(--body); font-weight: 700; font-size: 0.92rem; color: var(--ink); }
+  @media (max-width: 640px){ .nav-link{ display:none; } }
   .nav-cta{
-    font-family: var(--mono);
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    background: var(--nil-indigo-deep);
-    color: var(--sudsy-white);
-    padding: 12px 22px;
-    border-radius: 999px;
-    transition: transform 0.2s ease, background 0.2s ease;
+    font-family: var(--body); font-weight: 700; font-size: 0.92rem;
+    background: var(--navy); color: var(--paper);
+    padding: 12px 22px; border-radius: 999px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     white-space: nowrap;
   }
-  .nav-cta:hover{ background: var(--marigold-deep); transform: translateY(-2px); }
+  .nav-cta:hover{ transform: translateY(-2px); box-shadow: var(--shadow); }
 
   /* ---------- HERO ---------- */
-  .hero{
-    position: relative;
-    padding: clamp(56px, 9vw, 108px) 0 0;
-    overflow: hidden;
-  }
-  .hero .wrap{
-    display:grid;
-    grid-template-columns: 1.05fr 0.85fr;
-    gap: clamp(32px, 5vw, 64px);
-    align-items: center;
-  }
-  .hero h1{
-    font-size: clamp(2.6rem, 6.2vw, 4.6rem);
-    margin: 18px 0 22px;
-    color: var(--deep-ink);
-  }
-  .hero h1 em{
-    font-style: normal;
-    color: var(--nil-indigo);
-    position: relative;
-  }
-  .hero p.lede{
-    font-size: clamp(1.02rem, 1.6vw, 1.2rem);
-    max-width: 46ch;
-    color: rgba(20,32,46,0.78);
-    margin-bottom: 34px;
-  }
-  .cta-row{ display:flex; flex-wrap:wrap; gap: 14px; }
-  .btn{
-    display:inline-flex; align-items:center; gap:8px;
-    padding: 15px 28px;
-    border-radius: 999px;
-    font-weight: 700;
-    font-size: 0.98rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .btn-primary{
-    background: var(--marigold);
-    color: var(--nil-indigo-deep);
-    box-shadow: 0 10px 24px -8px rgba(243,169,61,0.7);
-  }
-  .btn-primary:hover{ transform: translateY(-3px); box-shadow: 0 14px 28px -8px rgba(243,169,61,0.85); }
-  .btn-ghost{
-    border: 1.5px solid var(--nil-indigo);
-    color: var(--nil-indigo-deep);
-  }
-  .btn-ghost:hover{ background: rgba(26,59,110,0.06); transform: translateY(-3px); }
+  .hero{ padding: clamp(60px, 9vw, 116px) 0 clamp(50px,7vw,80px); }
+  .hero .wrap{ display:grid; grid-template-columns: 1fr; gap: 24px; max-width: 780px; }
+  .hero h1{ font-size: clamp(2.5rem, 6vw, 4rem); margin: 18px 0 4px; }
+  .hero h1 .accent{ color: var(--gold-deep); }
+  .hero p.lede{ font-size: 1.15rem; max-width: 50ch; color: rgba(22,35,58,0.68); font-weight: 500; }
+  .cta-row{ display:flex; flex-wrap:wrap; gap: 14px; margin-top: 10px; }
+  .btn{ display:inline-flex; align-items:center; gap:8px; padding: 15px 28px; border-radius: 999px; font-weight: 700; font-size: 0.98rem; font-family: var(--body); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .btn-primary{ background: var(--navy); color: var(--paper); box-shadow: var(--shadow); }
+  .btn-primary:hover{ transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .btn-ghost{ background: var(--paper-alt); color: var(--navy); }
+  .btn-ghost:hover{ transform: translateY(-3px); background: var(--gold-soft); }
 
-  .trust-strip{
-    display:flex; flex-wrap:wrap; gap: 10px 22px;
-    margin-top: 40px;
-  }
+  .trust-strip{ display:flex; flex-wrap:wrap; gap: 10px; margin-top: 34px; }
   .trust-strip span{
-    font-family: var(--mono);
-    font-size: 0.74rem;
-    letter-spacing: 0.04em;
-    color: rgba(20,32,46,0.55);
+    font-family: var(--body); font-weight: 700; font-size: 0.8rem;
+    color: var(--navy); background: var(--paper-alt);
+    padding: 9px 16px; border-radius: 999px;
     display:flex; align-items:center; gap:6px;
   }
-  .trust-strip span::before{ content:"✓"; color: var(--nil-indigo); font-weight:700; }
-
-  /* hero visual: nil drop dissolving in water */
-  .hero-visual{
-    position: relative;
-    aspect-ratio: 1/1;
-    display:flex; align-items:center; justify-content:center;
-  }
-  .basin{
-    width: 100%; max-width: 420px; aspect-ratio: 1/1;
-    border-radius: 50%;
-    background: radial-gradient(circle at 38% 32%, #ffffff 0%, var(--foam-mint) 38%, var(--foam-mint-deep) 100%);
-    position: relative;
-    box-shadow: inset 0 -14px 40px -10px rgba(15,39,73,0.18), 0 30px 60px -24px rgba(15,39,73,0.35);
-  }
-  .ring{
-    position:absolute; border-radius:50%;
-    border: 2px solid var(--nil-indigo);
-    opacity: 0;
-    left: 50%; top: 50%;
-    transform: translate(-50%,-50%);
-    animation: ripple 3.6s ease-out infinite;
-  }
-  .ring.r2{ animation-delay: 1.2s; }
-  .ring.r3{ animation-delay: 2.4s; }
-  @keyframes ripple{
-    0%{ width: 40px; height:40px; opacity: 0.65; }
-    100%{ width: 340px; height:340px; opacity: 0; }
-  }
-  .drop-core{
-    position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
-    width: 76px; height: 92px;
-    background: linear-gradient(160deg, var(--nil-indigo) 0%, var(--nil-indigo-deep) 100%);
-    border-radius: 50% 50% 50% 4%;
-    rotate: -10deg;
-    box-shadow: 0 12px 26px -8px rgba(15,39,73,0.55);
-    animation: bob 4.5s ease-in-out infinite;
-  }
-  @keyframes bob{
-    0%,100%{ transform: translate(-50%,-52%) rotate(-10deg); }
-    50%{ transform: translate(-50%,-46%) rotate(-6deg); }
-  }
-  .hero-badge{
-    position:absolute; bottom: 6%; right: 4%;
-    background: var(--sudsy-white);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 12px 16px;
-    box-shadow: 0 14px 30px -14px rgba(15,39,73,0.35);
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    line-height:1.3;
-  }
-  .hero-badge b{ display:block; font-family: var(--display); font-size:1.3rem; color: var(--nil-indigo-deep); }
-
-  .wave-divider{ display:block; width:100%; margin-top: clamp(40px,6vw,72px); }
+  .trust-strip span::before{ content:"●"; color: var(--gold); font-size: 0.5rem; }
 
   /* ---------- SECTION SHARED ---------- */
   section{ padding: clamp(56px,8vw,96px) 0; }
-  .section-head{ max-width: 640px; margin-bottom: clamp(34px,5vw,54px); }
-  .section-head h2{
-    font-size: clamp(2rem, 4vw, 2.9rem);
-    margin-top: 14px;
-    color: var(--deep-ink);
-  }
-  .section-head p{
-    color: rgba(20,32,46,0.72);
-    margin-top: 14px;
-    font-size: 1.05rem;
-  }
+  .section-head{ max-width: 620px; margin-bottom: clamp(34px,5vw,52px); }
+  .section-head h2{ font-size: clamp(1.9rem, 3.6vw, 2.6rem); margin-top: 14px; }
+  .section-head p{ color: rgba(22,35,58,0.65); margin-top: 14px; font-size: 1.05rem; }
 
   /* ---------- ABOUT ---------- */
-  .about{ background: var(--foam-mint); position:relative; }
-  .about .wrap{
-    display:grid; grid-template-columns: 1fr 1fr; gap: clamp(32px,5vw,60px);
-    align-items:start;
-  }
-  .about-copy p{
-    color: rgba(20,32,46,0.8);
-    margin-bottom: 16px;
-    font-size: 1.02rem;
-  }
-  .stat-grid{
-    display:grid; grid-template-columns: repeat(2,1fr); gap: 18px;
-    margin-top: 8px;
-  }
-  .stat{
-    background: var(--sudsy-white);
-    border-radius: 18px;
-    padding: 22px 20px;
-    border: 1px solid rgba(15,39,73,0.08);
-  }
-  .stat b{
-    font-family: var(--display);
-    font-size: clamp(1.8rem,3vw,2.3rem);
-    color: var(--nil-indigo-deep);
-    display:block;
-  }
-  .stat span{
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: rgba(20,32,46,0.6);
-  }
+  .about{ background: var(--paper-alt); border-radius: var(--r-lg); margin: 0 clamp(12px,2vw,28px); }
+  .about .wrap{ display:grid; grid-template-columns: 0.8fr 1fr; gap: clamp(32px,5vw,60px); }
+  .about-copy p{ color: rgba(22,35,58,0.72); margin-bottom: 16px; }
+  .stat-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 22px; }
+  .stat{ background: var(--paper); border-radius: var(--r-md); padding: 22px 20px; box-shadow: var(--shadow); }
+  .stat b{ font-family: var(--display); font-size: 1.9rem; font-weight: 800; color: var(--navy); display:block; }
+  .stat span{ font-family: var(--body); font-weight: 700; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.03em; color: rgba(22,35,58,0.5); }
 
   /* ---------- WHY ---------- */
-  .feature-grid{
-    display:grid; grid-template-columns: repeat(4,1fr); gap: 20px;
-  }
-  .feature{
-    padding: 28px 22px;
-    border-radius: 20px;
-    background: var(--sudsy-white);
-    border: 1px solid var(--line);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-  }
-  .feature:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 18px 34px -18px rgba(15,39,73,0.35);
-    border-color: var(--nil-indigo);
-  }
-  .feature .icon{
-    width: 46px; height:46px;
-    border-radius: 12px;
-    background: var(--nil-indigo);
-    color: var(--sudsy-white);
-    display:flex; align-items:center; justify-content:center;
-    margin-bottom: 18px;
-    font-family: var(--display);
-    font-size: 1.2rem;
-  }
-  .feature h3{
-    font-family: var(--body);
-    font-weight: 700;
-    text-transform: none;
-    font-size: 1.05rem;
-    margin-bottom: 8px;
-    letter-spacing: 0;
-  }
-  .feature p{ font-size: 0.92rem; color: rgba(20,32,46,0.7); }
+  .feature-grid{ display:grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
+  .feature{ padding: 28px 24px; border-radius: var(--r-md); background: var(--paper-alt); transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease; }
+  .feature:hover{ transform: translateY(-6px); box-shadow: var(--shadow); background: var(--paper); }
+  .feature .icon{ width: 46px; height:46px; border-radius: 14px; background: var(--navy); color: var(--paper); display:flex; align-items:center; justify-content:center; margin-bottom: 18px; font-family: var(--display); font-weight: 700; font-size: 1.1rem; }
+  .feature h3{ font-family: var(--display); font-weight: 700; font-size: 1.05rem; margin-bottom: 8px; color: var(--navy); }
+  .feature p{ font-size: 0.92rem; color: rgba(22,35,58,0.62); }
 
   /* ---------- PROCESS ---------- */
-  .process{ background: var(--nil-indigo-deep); color: var(--sudsy-white); }
-  .process .section-head h2{ color: var(--sudsy-white); }
-  .process .section-head p{ color: rgba(250,248,243,0.72); }
-  .process .eyebrow{ color: var(--marigold); }
-  .process .eyebrow::before{ background: var(--sudsy-white); }
-  .process-row{
-    display:grid; grid-template-columns: repeat(3,1fr); gap: 26px;
-    counter-reset: step;
-  }
-  .step{
-    position:relative;
-    padding: 30px 24px 26px;
-    border: 1px solid rgba(250,248,243,0.16);
-    border-radius: 20px;
-    background: rgba(250,248,243,0.04);
-  }
-  .step .num{
-    font-family: var(--display);
-    font-size: 2.6rem;
-    color: var(--marigold);
-    line-height:1;
-    display:block;
-    margin-bottom: 14px;
-  }
-  .step h3{
-    font-family: var(--body); font-weight:700; letter-spacing:0;
-    text-transform:none; font-size: 1.08rem; margin-bottom: 8px;
-  }
-  .step p{ font-size: 0.92rem; color: rgba(250,248,243,0.72); }
-  .step:not(:last-child)::after{
-    content:"";
-    position:absolute; top:44px; right:-14px;
-    width: 22px; height:2px;
-    background: rgba(250,248,243,0.3);
-    display:none;
-  }
-  @media (min-width: 861px){
-    .step:not(:last-child)::after{ display:block; }
-  }
+  .process{ background: var(--navy); color: var(--paper); border-radius: var(--r-lg); margin: 0 clamp(12px,2vw,28px); }
+  .process .section-head h2{ color: var(--paper); }
+  .process .section-head p{ color: rgba(255,255,255,0.65); }
+  .process .eyebrow{ background: rgba(255,255,255,0.12); color: var(--gold); }
+  .process-row{ display:grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+  .step{ padding: 28px 24px; border-radius: var(--r-md); background: rgba(255,255,255,0.06); }
+  .step .num{ font-family: var(--display); font-size: 2.2rem; font-weight: 800; color: var(--gold); display:block; margin-bottom: 12px; }
+  .step h3{ font-family: var(--display); font-weight: 700; font-size: 1.05rem; margin-bottom: 8px; color: var(--paper); }
+  .step p{ font-size: 0.92rem; color: rgba(255,255,255,0.62); }
 
   /* ---------- PRODUCTS ---------- */
-  .product-grid{
-    display:grid; grid-template-columns: repeat(3,1fr); gap: 22px;
-  }
-  .product-grid.two-up{
-    grid-template-columns: repeat(2,1fr);
-    max-width: 720px;
-  }
-  .product-card{
-    border-radius: 22px;
-    padding: 30px 26px;
-    border: 1px solid var(--line);
-    background: var(--sudsy-white);
-    position: relative;
-    overflow:hidden;
-  }
-  .product-card.popular{
-    border-color: var(--marigold);
-    box-shadow: 0 22px 40px -22px rgba(243,169,61,0.5);
-  }
-  .product-card .tag{
-    position:absolute; top:18px; right:18px;
-    font-family: var(--mono); font-size: 0.65rem;
-    background: var(--marigold); color: var(--nil-indigo-deep);
-    padding: 5px 10px; border-radius: 999px; font-weight:700;
-    text-transform:uppercase; letter-spacing:0.04em;
-  }
-  .product-card .swatch{
-    width: 52px; height: 52px; border-radius: 14px;
-    background: linear-gradient(160deg, var(--nil-indigo), var(--nil-indigo-deep));
-    margin-bottom: 20px;
-  }
-  .product-card h3{
-    font-family: var(--body); font-weight:700; text-transform:none;
-    font-size: 1.15rem; letter-spacing:0; margin-bottom: 8px;
-  }
-  .product-card p{ font-size: 0.92rem; color: rgba(20,32,46,0.7); margin-bottom: 18px; }
-  .product-card .note{
-    font-family: var(--mono); font-size: 0.72rem;
-    color: var(--nil-indigo); border-top: 1px dashed var(--line);
-    padding-top: 14px;
-  }
+  .product-grid{ display:grid; grid-template-columns: repeat(2,1fr); gap: 20px; max-width: 760px; }
+  .product-card{ border-radius: var(--r-md); padding: 30px 26px; background: var(--paper-alt); position: relative; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .product-card:hover{ transform: translateY(-6px); box-shadow: var(--shadow); }
+  .product-card.popular{ background: var(--gold-soft); }
+  .product-card .tag{ font-family: var(--body); font-size: 0.72rem; font-weight: 800; background: var(--gold); color: var(--navy-deep); padding: 6px 14px; border-radius: 999px; text-transform:uppercase; letter-spacing:0.03em; display:inline-block; margin-bottom: 18px; }
+  .product-card h3{ font-family: var(--display); font-weight: 700; font-size: 1.25rem; margin-bottom: 10px; }
+  .product-card p{ font-size: 0.94rem; color: rgba(22,35,58,0.65); margin-bottom: 18px; }
+  .product-card .note{ font-family: var(--body); font-weight: 700; font-size: 0.78rem; color: var(--navy); padding-top: 14px; border-top: 1px solid rgba(16,35,63,0.12); }
 
-  /* ---------- CTA / DISTRIBUTOR FORM ---------- */
-  .cta-section{ background: var(--foam-mint); }
-  .cta-box{
-    background: var(--sudsy-white);
-    border-radius: 28px;
-    padding: clamp(30px,5vw,54px);
-    display:grid; grid-template-columns: 1fr 1fr; gap: 40px;
-    border: 1px solid rgba(15,39,73,0.08);
-  }
-  .cta-box h2{ font-size: clamp(1.8rem,3.4vw,2.4rem); margin-bottom: 14px; }
-  .cta-box p{ color: rgba(20,32,46,0.72); margin-bottom: 18px; }
+  /* ---------- INVESTORS ---------- */
+  .investors{ background: var(--navy-deep); color: var(--paper); border-radius: var(--r-lg); margin: 0 clamp(12px,2vw,28px); }
+  .investors .eyebrow{ background: rgba(255,255,255,0.1); color: var(--gold); }
+  .investors .section-head h2{ color: var(--paper); }
+  .investors .section-head p{ color: rgba(255,255,255,0.65); }
+  .investor-grid{ display:grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(30px,4vw,52px); align-items: stretch; }
+  .investor-points{ display:grid; gap: 16px; }
+  .point{ padding: 22px; border-radius: var(--r-md); background: rgba(255,255,255,0.06); display:flex; gap:14px; align-items:flex-start; }
+  .point b{ font-family: var(--display); font-weight: 800; color: var(--gold); font-size: 1rem; flex-shrink:0; width: 30px; }
+  .point span{ font-size: 0.95rem; color: rgba(255,255,255,0.78); }
+  .deck-card{ border-radius: var(--r-md); background: var(--paper); color: var(--ink); padding: clamp(28px,4vw,36px); display:flex; flex-direction:column; }
+  .deck-card .icon{ width: 52px; height:52px; border-radius: 14px; background: var(--gold); color: var(--navy-deep); display:flex; align-items:center; justify-content:center; font-family: var(--display); font-weight: 800; font-size: 1.1rem; margin-bottom: 18px; }
+  .deck-card h3{ font-family: var(--display); font-weight: 700; font-size: 1.25rem; color: var(--navy); margin-bottom: 10px; }
+  .deck-card p{ font-size: 0.92rem; color: rgba(22,35,58,0.65); margin-bottom: 22px; flex-grow: 1; }
+  .btn-gold{ display:inline-flex; align-items:center; gap:8px; width: 100%; justify-content:center; padding: 15px 22px; border-radius: 999px; font-weight: 700; font-size: 0.95rem; font-family: var(--body); background: var(--gold); color: var(--navy-deep); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .btn-gold:hover{ transform: translateY(-3px); box-shadow: var(--shadow); }
+
+  /* ---------- CTA / DISTRIBUTOR ---------- */
+  .cta-section{ background: var(--paper-alt); border-radius: var(--r-lg); margin: 0 clamp(12px,2vw,28px); }
+  .cta-box{ display:grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items:center; }
+  .cta-box h2{ font-size: clamp(1.8rem,3.2vw,2.3rem); margin-bottom: 14px; }
+  .cta-box p{ color: rgba(22,35,58,0.65); margin-bottom: 18px; }
+  .contact-panel{ display:flex; flex-direction:column; gap: 14px; }
   .contact-line{
-    font-family: var(--mono); font-size: 0.88rem;
+    font-family: var(--display); font-weight: 700;
+    font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+    color: var(--navy); background: var(--paper);
+    padding: 18px 22px; border-radius: var(--r-sm);
     display:flex; align-items:center; gap:10px;
-    margin-top: 10px; color: var(--nil-indigo-deep); font-weight:600;
-  }
-  .contact-panel{
-    display:flex; flex-direction:column; justify-content:center; gap: 16px;
-    background: var(--foam-mint);
-    border-radius: 20px;
-    padding: 32px 28px;
-    border: 1px solid rgba(15,39,73,0.08);
-  }
-  .contact-line.big{
-    font-family: var(--display);
-    text-transform: none;
-    font-size: clamp(1.15rem, 2.4vw, 1.5rem);
-    color: var(--nil-indigo-deep);
-    background: var(--sudsy-white);
-    padding: 16px 20px;
-    border-radius: 14px;
-    border: 1.5px solid var(--nil-indigo);
-    transition: transform 0.2s ease, background 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     word-break: break-word;
   }
-  .contact-line.big:hover{ background: var(--marigold); transform: translateY(-2px); }
-  .contact-panel .form-note{ margin: 0; }
-  form{ display:grid; gap: 14px; }
-  .field{ display:grid; gap: 6px; }
-  label{
-    font-family: var(--mono); font-size: 0.7rem;
-    text-transform: uppercase; letter-spacing: 0.05em;
-    color: rgba(20,32,46,0.6);
-  }
-  input, select{
-    padding: 13px 16px;
-    border-radius: 12px;
-    border: 1.5px solid var(--line);
-    font-family: var(--body);
-    font-size: 0.95rem;
-    background: var(--sudsy-white);
-    color: var(--deep-ink);
-  }
-  input:focus, select:focus{ border-color: var(--nil-indigo); }
-  .submit-btn{
-    margin-top: 6px;
-    border: none; cursor: pointer;
-    background: var(--nil-indigo-deep);
-    color: var(--sudsy-white);
-    padding: 15px 20px;
-    border-radius: 12px;
-    font-weight: 700; font-size: 0.98rem;
-    transition: background 0.2s ease, transform 0.2s ease;
-  }
-  .submit-btn:hover{ background: var(--marigold-deep); color: var(--nil-indigo-deep); transform: translateY(-2px); }
-  .form-note{ font-size: 0.76rem; color: rgba(20,32,46,0.5); }
+  .contact-line:hover{ transform: translateY(-2px); box-shadow: var(--shadow); }
+  .form-note{ font-size: 0.85rem; color: rgba(22,35,58,0.55); margin-top: 2px; font-weight: 500; }
 
   /* ---------- FOOTER ---------- */
-  footer{ background: var(--deep-ink); color: rgba(250,248,243,0.8); padding: 48px 0 28px; }
-  footer .wrap{
-    display:flex; flex-wrap:wrap; justify-content:space-between; gap: 24px;
-    padding-bottom: 28px; border-bottom: 1px solid rgba(250,248,243,0.12);
-  }
-  footer .logo{ color: var(--sudsy-white); }
-  footer .foot-links{ display:flex; gap: 28px; flex-wrap:wrap; font-size: 0.9rem; }
-  .foot-bottom{
-    padding-top: 22px;
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
-    font-family: var(--mono); font-size: 0.72rem; color: rgba(250,248,243,0.5);
-  }
+  footer{ background: var(--paper); color: var(--ink); padding: 48px 0 28px; }
+  footer .wrap{ display:flex; flex-wrap:wrap; justify-content:space-between; gap: 20px; padding-bottom: 26px; border-bottom: 1px solid var(--line); }
+  .foot-links{ display:flex; gap: 26px; flex-wrap:wrap; font-size: 0.9rem; font-weight: 700; }
+  .foot-bottom{ padding-top: 20px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-family: var(--mono); font-size: 0.72rem; color: rgba(22,35,58,0.5); }
 
   /* ---------- RESPONSIVE ---------- */
-  @media (max-width: 900px){
-    .hero .wrap{ grid-template-columns: 1fr; }
-    .hero-visual{ order:-1; max-width: 300px; margin: 0 auto; }
+  @media (max-width: 860px){
     .about .wrap{ grid-template-columns: 1fr; }
     .feature-grid{ grid-template-columns: repeat(2,1fr); }
     .process-row{ grid-template-columns: 1fr; }
-    .product-grid{ grid-template-columns: 1fr; }
+    .investor-grid{ grid-template-columns: 1fr; }
     .cta-box{ grid-template-columns: 1fr; }
   }
   @media (max-width: 560px){
     .feature-grid{ grid-template-columns: 1fr; }
-    .nav-cta{ font-size: 0.72rem; padding: 10px 16px; }
-    .trust-strip{ gap: 8px 14px; }
+    .product-grid{ grid-template-columns: 1fr; }
+    .about, .process, .investors, .cta-section{ margin: 0 8px; border-radius: var(--r-md); }
   }
 
-  .reveal{ opacity:0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal{ opacity:0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.in{ opacity:1; transform: translateY(0); }
 </style>
 </head>
@@ -513,8 +223,11 @@
 
 <header>
   <nav class="wrap">
-    <a href="#top" class="logo"><span class="drop"></span>SafoneConsumer</a>
-    <a href="#distributor" class="nav-cta">Become a Distributor</a>
+    <a href="#top" class="logo"><span class="dot"></span>SafoneConsumer</a>
+    <div class="nav-right">
+      <a href="#investors" class="nav-link">For Investors</a>
+      <a href="#distributor" class="nav-cta">Become a Distributor</a>
+    </div>
   </nav>
 </header>
 
@@ -523,47 +236,34 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <div>
-        <span class="eyebrow">EST. 2022 · BSTI CERTIFIED · A SAFONECONSUMER PRODUCT</span>
-        <h1>Stains don't<br>stand a chance<br><em>against Super Moon.</em></h1>
-        <p class="lede">Super Moon detergent powder lifts tough stains in cold water — manufactured by SafoneConsumer for households who won't compromise on clean, or on price.</p>
-        <div class="cta-row">
-          <a href="#distributor" class="btn btn-primary">Become a Distributor</a>
-          <a href="#products" class="btn btn-ghost">See Our Products</a>
-        </div>
-        <div class="trust-strip">
-          <span>BSTI Certified</span>
-          <span>Locally Manufactured</span>
-          <span>Trusted Nationwide</span>
-        </div>
+      <span class="eyebrow">Est. 2022 · BSTI Certified · A SafoneConsumer Product</span>
+      <h1>Stains don't stand a chance <span class="accent">against Super Moon.</span></h1>
+      <p class="lede">Super Moon detergent powder lifts tough stains in cold water — manufactured by SafoneConsumer for households who won't compromise on clean, or on price.</p>
+      <div class="cta-row">
+        <a href="#distributor" class="btn btn-primary">Become a Distributor</a>
+        <a href="#products" class="btn btn-ghost">See Our Products</a>
       </div>
-      <div class="hero-visual">
-        <div class="ring r1"></div>
-        <div class="ring r2"></div>
-        <div class="ring r3"></div>
-        <div class="basin"></div>
-        <div class="drop-core"></div>
-        <div class="hero-badge"><b>100%</b>Stain-focused<br>formula</div>
+      <div class="trust-strip">
+        <span>BSTI Certified</span>
+        <span>Locally Manufactured</span>
+        <span>Trusted Nationwide</span>
       </div>
     </div>
-    <svg class="wave-divider" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0,40 C 240,90 480,0 720,30 C 960,60 1200,10 1440,40 L1440,90 L0,90 Z" fill="#dceee7"></path>
-    </svg>
   </section>
 
   <!-- ABOUT -->
   <section class="about" id="about">
-    <div class="wrap">
+    <div class="wrap" style="padding-top:56px; padding-bottom:56px;">
       <div class="reveal">
         <span class="eyebrow">Our Story</span>
-        <h2 style="font-size:clamp(1.9rem,3.6vw,2.6rem); margin-top:14px;">One brand,<br>trusted by name.</h2>
+        <h2 style="font-size:clamp(1.8rem,3.4vw,2.4rem); margin-top:14px;">One brand, trusted by name.</h2>
       </div>
       <div class="about-copy reveal">
         <p><strong>Super Moon</strong> is the detergent powder brand manufactured by <strong>SafoneConsumer</strong> (Safone Consumer Products Bangladesh), founded in 2022 with one goal: make detergent powder that Bangladeshi families can trust, without stretching their monthly budget.</p>
         <p>Every pack of Super Moon is produced in our own facility and certified by BSTI — the Bangladesh Standards and Testing Institution — so retailers and households know exactly what they're getting: consistent quality, batch after batch.</p>
         <div class="stat-grid">
-          <div class="stat"><b>2022</b><span>SafoneConsumer Founded</span></div>
-          <div class="stat"><b>BSTI</b><span>Certified Quality</span></div>
+          <div class="stat"><b>2022</b><span>Founded</span></div>
+          <div class="stat"><b>BSTI</b><span>Certified</span></div>
         </div>
       </div>
     </div>
@@ -584,14 +284,14 @@
           <p>Meets Bangladesh's national quality and safety standard, batch after batch.</p>
         </div>
         <div class="feature reveal">
-          <div class="icon">◐</div>
+          <div class="icon">❄</div>
           <h3>Cold-Water Power</h3>
-          <p>Formulated to lift tough stains without needing hot water — saving electricity and time.</p>
+          <p>Lifts tough stains without hot water — saving electricity and time.</p>
         </div>
         <div class="feature reveal">
-          <div class="icon">⬢</div>
+          <div class="icon">⌂</div>
           <h3>Made Fresh, Locally</h3>
-          <p>Manufactured within Bangladesh, so retailers get faster restocking and fresher product.</p>
+          <p>Manufactured within Bangladesh for faster restocking and fresher product.</p>
         </div>
         <div class="feature reveal">
           <div class="icon">৳</div>
@@ -604,7 +304,7 @@
 
   <!-- PROCESS -->
   <section class="process">
-    <div class="wrap">
+    <div class="wrap" style="padding-top:56px; padding-bottom:56px;">
       <div class="section-head reveal">
         <span class="eyebrow">From Factory to Shelf</span>
         <h2>How Super Moon reaches your shop.</h2>
@@ -638,16 +338,15 @@
         <h2>A pack for every household.</h2>
         <p>Super Moon detergent powder is available across sizes — from a compact everyday pack to the full-size household favorite.</p>
       </div>
-      <div class="product-grid two-up">
+      <div class="product-grid">
         <div class="product-card reveal">
-          <div class="swatch"></div>
+          <span class="tag">Everyday</span>
           <h3>200gm Pack</h3>
           <p>Compact, everyday size — priced for quick, affordable top-ups between big washes.</p>
           <div class="note">Ideal for small households &amp; corner shops</div>
         </div>
         <div class="product-card popular reveal">
           <span class="tag">Best Seller</span>
-          <div class="swatch"></div>
           <h3>500gm Pack</h3>
           <p>Our flagship size, built for a household's full weekly wash routine.</p>
           <div class="note">Best margin for retailers</div>
@@ -656,18 +355,43 @@
     </div>
   </section>
 
+  <!-- INVESTORS -->
+  <section class="investors" id="investors">
+    <div class="wrap" style="padding-top:56px; padding-bottom:56px;">
+      <div class="section-head reveal">
+        <span class="eyebrow">For Investors</span>
+        <h2>Backing Super Moon's next chapter.</h2>
+        <p>SafoneConsumer is raising growth capital to scale Super Moon's manufacturing capacity and distribution reach across Bangladesh.</p>
+      </div>
+      <div class="investor-grid">
+        <div class="investor-points reveal">
+          <div class="point"><b>01</b><span>A BSTI-certified, locally manufactured FMCG brand with a proven, direct factory-to-shelf supply chain.</span></div>
+          <div class="point"><b>02</b><span>Clear market opportunity in Bangladesh's everyday-use detergent category, priced for mass adoption.</span></div>
+          <div class="point"><b>03</b><span>A short, capital-efficient path from production to retail — ready to scale with the right partner.</span></div>
+        </div>
+        <div class="deck-card reveal">
+          <div class="icon">PDF</div>
+          <h3>Super Moon Investor Pitch Deck</h3>
+          <p>Our full business pitch — problem, market opportunity, business model and the road ahead for SafoneConsumer.</p>
+          <a class="btn-gold" href="SafoneConsumer-Investor-Pitch.pdf" target="_blank" rel="noopener">View Pitch Deck</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- DISTRIBUTOR CTA -->
   <section class="cta-section" id="distributor">
-    <div class="wrap">
-      <div class="cta-box single reveal">
+    <div class="wrap" style="padding-top:56px; padding-bottom:56px;">
+      <div class="cta-box reveal">
         <div>
           <span class="eyebrow">Partner With Us</span>
           <h2>Stock Super Moon in your shop.</h2>
           <p>SafoneConsumer is onboarding distributors and retailers across Bangladesh for Super Moon detergent powder. Reach out directly and our team will get back to you with pricing and stock details.</p>
         </div>
         <div class="contact-panel">
-          <a class="contact-line big" href="mailto:safoneconsumer@gmail.com">✉️ safoneconsumer@gmail.com</a>
-          <p class="form-note">For distributor &amp; partnership inquiries, contact us at the email above — we typically reply within 1–2 business days.</p>
+          <a class="contact-line" href="mailto:safoneconsumer@gmail.com">✉️ safoneconsumer@gmail.com</a>
+          <a class="contact-line" href="tel:+8801680045309">📞 +880 1680-045309</a>
+          <p class="form-note">We typically reply within 1–2 business days.</p>
         </div>
       </div>
     </div>
@@ -677,15 +401,16 @@
 
 <footer>
   <div class="wrap">
-    <a href="#top" class="logo"><span class="drop"></span>SafoneConsumer</a>
+    <a href="#top" class="logo"><span class="dot"></span>SafoneConsumer</a>
     <div class="foot-links">
       <a href="#about">About</a>
       <a href="#products">Products</a>
+      <a href="#investors">Investors</a>
       <a href="#distributor">Distributors</a>
     </div>
   </div>
   <div class="wrap foot-bottom">
-    <span>© 2026 SafoneConsumer (Safone Consumer Products Bangladesh). All rights reserved.</span>
+    <span>© 2026 SafoneConsumer (Safone Consumer Products Bangladesh). All rights reserved. · +880 1680-045309</span>
     <span>Made in Bangladesh</span>
   </div>
 </footer>
